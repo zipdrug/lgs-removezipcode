@@ -52,7 +52,7 @@ def execute():
     try:
         logger.info("Starting Topic Queue creation process")
         topic_arn = create_topic()
-        queue_url = create_queue(SQS_REMOVED_ZIPCODE_INPUT_NM)
+        queue_url = create_queue()
         queue_arn = sqs_arn(queue_url)
         subscribe_message(topic_arn, queue_arn)
 

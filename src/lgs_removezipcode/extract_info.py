@@ -16,7 +16,7 @@ def get_pharmacy_details(queue_info: dict):
     return pharmacy_id, zipcode
 
 def get_patient_detail(engine, pharmacy_df: dict):
-    final__patient_df = pd.DataFrame()
+    final_patient_df = pd.DataFrame()
     for ind in pharmacy_df.index:
         pharmacy_id = pharmacy_df['pharmacyid'][ind]
         zipcode = pharmacy_df['zipcode'][ind]

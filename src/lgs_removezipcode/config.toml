@@ -5,9 +5,9 @@ SNS_REMOVED_ZIPCODE_OUTPUT_NAME= "RemoveZipcodeInTopic"
 
 [stage]
 DB_ENV = "zipdrug-stage-db"
-SQS_REMOVED_ZIPCODE_INPUT_NAME= "SampleStgCloneQueue"
+SQS_REMOVED_ZIPCODE_INPUT_NAME= "SampleStgQueue"
 
 [production]
 DB_ENV = "production-api-db"
-SQS_REMOVED_ZIPCODE_INPUT_NAME= "SampleProdCloneQueue"
+SQS_REMOVED_ZIPCODE_INPUT_NAME= "SampleProdQueue"
 

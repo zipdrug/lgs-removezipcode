@@ -1,0 +1,13 @@
+[development]
+DB_ENV = "zipdrug-development-db"
+SQS_REMOVED_ZIPCODE_INPUT_NAME= "SampleRemoveZipcodeQueue"
+SNS_REMOVED_ZIPCODE_OUTPUT_NAME= "SampleRemoveZipcodeTopic"
+
+[stage]
+DB_ENV = "zipdrug-stage-db"
+SQS_REMOVED_ZIPCODE_INPUT_NAME= "SampleStgCloneQueue"
+
+[production]
+DB_ENV = "production-api-db"
+SQS_REMOVED_ZIPCODE_INPUT_NAME= "SampleProdCloneQueue"
+

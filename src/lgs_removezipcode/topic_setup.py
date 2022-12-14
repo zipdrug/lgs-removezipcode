@@ -41,7 +41,7 @@ def sqs_arn(queue_url):
 
 def subscribe_message(topic_arn,queue_arn):
     attribs = dict()
-    attribs['RawMessageDelivery'] = 'false'
+    attribs['RawMessageDelivery'] = 'True'
     response = sns_client.subscribe(
         TopicArn=topic_arn,
         Protocol='sqs',

@@ -40,10 +40,12 @@ def sqs_arn(queue_url):
     return response['Attributes']['QueueArn']
 
 def subscribe_message(topic_arn,queue_arn):
+    attribs = dict()
+    attribs['RawMessageDelivery'] = 'false'
     response = sns_client.subscribe(
         TopicArn=topic_arn,
         Protocol='sqs',
-        Endpoint=queue_arn,
+        Endpoint=queue_arn, Attributes=attribs
     )
     print("Subscribe response:", response)
     return response

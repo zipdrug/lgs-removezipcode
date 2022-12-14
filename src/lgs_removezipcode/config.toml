@@ -1,6 +1,6 @@
 [development]
 DB_ENV = "zipdrug-development-db"
-SQS_REMOVED_ZIPCODE_INPUT_NAME= "RemoveZipcodeInQueue2"
+SQS_REMOVED_ZIPCODE_INPUT_NAME= "RemoveZipcodeInQueue"
 SNS_REMOVED_ZIPCODE_OUTPUT_NAME= "RemoveZipcodeOutTopic2"
 
 [stage]
